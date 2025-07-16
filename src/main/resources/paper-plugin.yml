@@ -1,0 +1,5 @@
+name: ExamplePlugin
+version: '1.0-RELEASE'
+main: de.smitemc.template.bootstrap.PaperBootstrap
+api-version: '1.21.7'
+load: STARTUP
