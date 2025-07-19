@@ -25,12 +25,12 @@ public class MinestomTemplatePlugin extends TemplatePlugin {
         final GlobalEventHandler eventHandler = MinecraftServer.getGlobalEventHandler();
         eventHandler.addListener(new PlayerSpawnListener());
 
-        this.getLogger().info("Registering Minestom template plugin");
+        this.getLogger().info("Registering minestom template plugin");
     }
 
     @Override
     public void shutdown() {
-        this.getLogger().info("Shutting down Minestom template plugin");
+        this.getLogger().info("Shutting down minestom template plugin");
     }
 
 }

@@ -35,6 +35,19 @@ public abstract class TemplatePlugin {
     public abstract void shutdown();
 
     /**
+     * Returns the {@link MinestomTemplatePlugin} instance.
+     *
+     * @return the MinestomTemplatePlugin instance
+     * @apiNote Only call this method if the plugin runs on a Minestom server.
+     */
+    public MinestomTemplatePlugin minestom() {
+        if (!(instance instanceof MinestomTemplatePlugin minestomTemplatePlugin)) {
+            throw new IllegalStateException("This plugin is not a MinestomTemplatePlugin!");
+        }
+        return minestomTemplatePlugin;
+    }
+
+    /**
      * Returns the {@link PaperTemplatePlugin} instance.
      *
      * @return the PaperTemplatePlugin instance
